@@ -62,12 +62,18 @@
 		C42522BE2AF7971E00713390 /* Netflix-MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				C42522BF2AF7971E00713390 /* AppDelegate.swift */,
-				C42522C12AF7971E00713390 /* SceneDelegate.swift */,
+				C42522E02AF7C92200713390 /* Managers */,
+				C42522DF2AF7C91D00713390 /* Resources */,
+				C42522DE2AF7C8EC00713390 /* Models */,
+				C42522DC2AF7C8CA00713390 /* Views */,
+				C42522DD2AF7C8E200713390 /* ViewModels */,
 				C42522D32AF7995B00713390 /* Controllers */,
 				C42522C82AF7971F00713390 /* Assets.xcassets */,
 				C42522CA2AF7971F00713390 /* LaunchScreen.storyboard */,
 				C42522CD2AF7971F00713390 /* Info.plist */,
+				C42522BF2AF7971E00713390 /* AppDelegate.swift */,
+				C42522C12AF7971E00713390 /* SceneDelegate.swift */,
+				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
 			);
 			path = "Netflix-MVVM";
 			sourceTree = "<group>";
@@ -75,13 +81,47 @@
 		C42522D32AF7995B00713390 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
 				C42522D42AF799A000713390 /* HomeViewController.swift */,
 				C42522D62AF79A2E00713390 /* UpcomingViewController.swift */,
 				C42522D82AF79A8800713390 /* SearchViewController.swift */,
 				C42522DA2AF79ACB00713390 /* DownloadsViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C42522DC2AF7C8CA00713390 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C42522DD2AF7C8E200713390 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C42522DE2AF7C8EC00713390 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C42522DF2AF7C91D00713390 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C42522E02AF7C92200713390 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
