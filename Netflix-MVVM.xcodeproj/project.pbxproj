@@ -21,6 +21,7 @@
 		C42522E62AF7E6D700713390 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522E52AF7E6D700713390 /* APICaller.swift */; };
 		C42522E82AF7ED8C00713390 /* Title.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522E72AF7ED8C00713390 /* Title.swift */; };
 		C42522EA2AF8015000713390 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522E92AF8015000713390 /* Extensions.swift */; };
+		C42522EE2AF80B9300713390 /* TitleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522ED2AF80B9300713390 /* TitleCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		C42522E52AF7E6D700713390 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
 		C42522E72AF7ED8C00713390 /* Title.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Title.swift; sourceTree = "<group>"; };
 		C42522E92AF8015000713390 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C42522ED2AF80B9300713390 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			children = (
 				C42522E12AF7C99700713390 /* CollectionViewTableViewCell.swift */,
 				C42522E32AF7CF0F00713390 /* HeroHeaderUIView.swift */,
+				C42522ED2AF80B9300713390 /* TitleCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C42522D92AF79A8800713390 /* SearchViewController.swift in Sources */,
+				C42522EE2AF80B9300713390 /* TitleCollectionViewCell.swift in Sources */,
 				C42522C42AF7971E00713390 /* MainTabBarViewController.swift in Sources */,
 				C42522E22AF7C99700713390 /* CollectionViewTableViewCell.swift in Sources */,
 				C42522E62AF7E6D700713390 /* APICaller.swift in Sources */,
