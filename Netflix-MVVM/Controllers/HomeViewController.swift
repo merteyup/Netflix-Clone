@@ -40,7 +40,17 @@ class HomeViewController: UIViewController {
     }
     
     private func getTrendingMovies() {
-        
+       APICaller.shared.getTrendingMovies { results in
+           switch results {
+           case .success(let movies):
+               print(movies)
+           case .failure(let failure):
+               print(failure)
+           }
+       }
+    }
+    
+    private func getTrendingTvs() {
         APICaller.shared.getTrendingTvs { results in
             switch results {
             case .success(let tv):
@@ -49,16 +59,8 @@ class HomeViewController: UIViewController {
                 print(failure)
             }
         }
-        
-      //  APICaller.shared.getTrendingMovies { results in
-      //      switch results {
-      //      case .success(let movies):
-      //          print(movies)
-      //      case .failure(let failure):
-      //          print(failure)
-      //      }
-      //  }
     }
+    
     
     private func configureNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play"), style: .done, target: self, action: nil)
