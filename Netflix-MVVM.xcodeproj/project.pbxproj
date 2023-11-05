@@ -16,6 +16,7 @@
 		C42522D72AF79A2E00713390 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522D62AF79A2E00713390 /* UpcomingViewController.swift */; };
 		C42522D92AF79A8800713390 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522D82AF79A8800713390 /* SearchViewController.swift */; };
 		C42522DB2AF79ACB00713390 /* DownloadsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522DA2AF79ACB00713390 /* DownloadsViewController.swift */; };
+		C42522E22AF7C99700713390 /* CollectionViewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522E12AF7C99700713390 /* CollectionViewTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C42522D62AF79A2E00713390 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
 		C42522D82AF79A8800713390 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C42522DA2AF79ACB00713390 /* DownloadsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadsViewController.swift; sourceTree = "<group>"; };
+		C42522E12AF7C99700713390 /* CollectionViewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		C42522DC2AF7C8CA00713390 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C42522E12AF7C99700713390 /* CollectionViewTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			files = (
 				C42522D92AF79A8800713390 /* SearchViewController.swift in Sources */,
 				C42522C42AF7971E00713390 /* MainTabBarViewController.swift in Sources */,
+				C42522E22AF7C99700713390 /* CollectionViewTableViewCell.swift in Sources */,
 				C42522DB2AF79ACB00713390 /* DownloadsViewController.swift in Sources */,
 				C42522C02AF7971E00713390 /* AppDelegate.swift in Sources */,
 				C42522C22AF7971E00713390 /* SceneDelegate.swift in Sources */,
