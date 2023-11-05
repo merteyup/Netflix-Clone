@@ -105,7 +105,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                                          width: 100,
                                          height: header.bounds.height)
         header.textLabel?.textColor = .label
-        header.textLabel?.text = header.textLabel?.text?.lowercased().capitalized
+        header.textLabel?.text = header.textLabel?.text?.capitalizeFirstLetter()
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
