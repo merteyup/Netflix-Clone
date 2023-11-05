@@ -32,8 +32,9 @@ class HomeViewController: UIViewController {
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
         // getTrendingMovies()
-        getUpcomingMovies()
-        getPopularMovies()
+        // getUpcomingMovies()
+        // getPopularMovies()
+        getTopRated()
     }
     
     override func viewDidLayoutSubviews() {
@@ -79,6 +80,17 @@ class HomeViewController: UIViewController {
             switch results {
             case .success(let popularMovie):
                 print(popularMovie)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+    }
+    
+    private func getTopRated() {
+        APICaller.shared.getTopRated { results in
+            switch results {
+            case .success(let topRated):
+                print(topRated)
             case .failure(let failure):
                 print(failure)
             }
