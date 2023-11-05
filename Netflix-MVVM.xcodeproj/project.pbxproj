@@ -56,12 +56,20 @@
 			children = (
 				C42522BF2AF7971E00713390 /* AppDelegate.swift */,
 				C42522C12AF7971E00713390 /* SceneDelegate.swift */,
-				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
+				C42522D32AF7995B00713390 /* Controllers */,
 				C42522C82AF7971F00713390 /* Assets.xcassets */,
 				C42522CA2AF7971F00713390 /* LaunchScreen.storyboard */,
 				C42522CD2AF7971F00713390 /* Info.plist */,
 			);
 			path = "Netflix-MVVM";
+			sourceTree = "<group>";
+		};
+		C42522D32AF7995B00713390 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
