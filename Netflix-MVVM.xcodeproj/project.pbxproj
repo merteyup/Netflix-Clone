@@ -14,6 +14,7 @@
 		C42522CC2AF7971F00713390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C42522CA2AF7971F00713390 /* LaunchScreen.storyboard */; };
 		C42522D52AF799A000713390 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522D42AF799A000713390 /* HomeViewController.swift */; };
 		C42522D72AF79A2E00713390 /* UpcomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522D62AF79A2E00713390 /* UpcomingViewController.swift */; };
+		C42522D92AF79A8800713390 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522D82AF79A8800713390 /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		C42522CD2AF7971F00713390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C42522D42AF799A000713390 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C42522D62AF79A2E00713390 /* UpcomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingViewController.swift; sourceTree = "<group>"; };
+		C42522D82AF79A8800713390 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
 				C42522D42AF799A000713390 /* HomeViewController.swift */,
 				C42522D62AF79A2E00713390 /* UpcomingViewController.swift */,
+				C42522D82AF79A8800713390 /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C42522D92AF79A8800713390 /* SearchViewController.swift in Sources */,
 				C42522C42AF7971E00713390 /* MainTabBarViewController.swift in Sources */,
 				C42522C02AF7971E00713390 /* AppDelegate.swift in Sources */,
 				C42522C22AF7971E00713390 /* SceneDelegate.swift in Sources */,
