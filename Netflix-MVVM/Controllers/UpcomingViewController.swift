@@ -9,6 +9,8 @@ import UIKit
 
 class UpcomingViewController: UIViewController {
     
+    private var titles: [Title] = [Title]()
+    
     private let upcomingTable: UITableView = {
         let tableView = UITableView()
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
@@ -28,6 +30,7 @@ class UpcomingViewController: UIViewController {
         upcomingTable.delegate = self
         
         view.addSubview(upcomingTable)
+        fetchUpcoming()
     }
     
     override func viewDidLayoutSubviews() {
@@ -35,19 +38,33 @@ class UpcomingViewController: UIViewController {
         upcomingTable.frame = view.bounds
     }
     
+    
+    private func fetchUpcoming() {
+        APICaller.shared.getUpcomingMovies{ [weak self] result in
+            switch result {
+            case .success(let titles):
+                DispatchQueue.main.async {
+                    self?.titles = titles
+                    self?.upcomingTable.reloadData()
+                }
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }
 
 extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return titles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel?.text = "Upcoming Table Cell"
+        cell.textLabel?.text = titles[indexPath.row].original_name ?? titles[indexPath.row].original_title ?? "Unknown"
         return cell
     }
     

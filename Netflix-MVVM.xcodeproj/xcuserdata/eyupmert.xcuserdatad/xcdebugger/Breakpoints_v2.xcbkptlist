@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "9523725C-48FB-478E-88E8-8752FE47D4C8"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "59631B3B-7C6E-4BA5-B56A-3F4174F327A6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Netflix-MVVM/Controllers/UpcomingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "fetchUpcoming()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "59631B3B-7C6E-4BA5-B56A-3F4174F327A6 - 88aea99c7d3d0e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Netflix_MVVM.Title&gt;, Swift.Error&gt;) -&gt; () in Netflix_MVVM.UpcomingViewController.fetchUpcoming() -&gt; ()"
+                  moduleName = "Netflix-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eyupmert/Documents/MVVM/Netflix-MVVM/Netflix-MVVM/Controllers/UpcomingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "59631B3B-7C6E-4BA5-B56A-3F4174F327A6 - 88aea99c7d3d0e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Netflix_MVVM.Title&gt;, Swift.Error&gt;) -&gt; () in Netflix_MVVM.UpcomingViewController.fetchUpcoming() -&gt; ()"
+                  moduleName = "Netflix-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eyupmert/Documents/MVVM/Netflix-MVVM/Netflix-MVVM/Controllers/UpcomingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "59631B3B-7C6E-4BA5-B56A-3F4174F327A6 - 88aea99c7d3d0e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Netflix_MVVM.Title&gt;, Swift.Error&gt;) -&gt; () in Netflix_MVVM.UpcomingViewController.fetchUpcoming() -&gt; ()"
+                  moduleName = "Netflix-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eyupmert/Documents/MVVM/Netflix-MVVM/Netflix-MVVM/Controllers/UpcomingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "244">
+               </Location>
+               <Location
+                  uuid = "59631B3B-7C6E-4BA5-B56A-3F4174F327A6 - 88aea99c7d3d0e48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;Netflix_MVVM.Title&gt;, Swift.Error&gt;) -&gt; () in Netflix_MVVM.UpcomingViewController.fetchUpcoming() -&gt; ()"
+                  moduleName = "Netflix-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/eyupmert/Documents/MVVM/Netflix-MVVM/Netflix-MVVM/Controllers/UpcomingViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "45"
+                  endingLineNumber = "45"
+                  offsetFromSymbolStart = "280">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63C95AD8-77F4-4326-B6C9-F0D9AC767838"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Netflix-MVVM/Controllers/UpcomingViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "fetchUpcoming()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
