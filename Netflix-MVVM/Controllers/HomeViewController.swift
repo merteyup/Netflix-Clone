@@ -31,72 +31,12 @@ class HomeViewController: UIViewController {
         
         let headerView = HeroHeaderUIView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 450))
         homeFeedTable.tableHeaderView = headerView
-        // getTrendingMovies()
-        // getUpcomingMovies()
-        // getPopularMovies()
-        getTopRated()
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         homeFeedTable.frame = view.bounds
     }
-    
-    private func getTrendingMovies() {
-       APICaller.shared.getTrendingMovies { results in
-           switch results {
-           case .success(let movies):
-               print(movies)
-           case .failure(let failure):
-               print(failure)
-           }
-       }
-    }
-    
-    private func getTrendingTvs() {
-        APICaller.shared.getTrendingTvs { results in
-            switch results {
-            case .success(let tv):
-                print(tv)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    private func getUpcomingMovies() {
-        APICaller.shared.getUpcomingMovies { results in
-            switch results {
-            case .success(let upcomingMovie):
-                print(upcomingMovie)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    private func getPopularMovies() {
-        APICaller.shared.getPopularMovies { results in
-            switch results {
-            case .success(let popularMovie):
-                print(popularMovie)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
-    private func getTopRated() {
-        APICaller.shared.getTopRated { results in
-            switch results {
-            case .success(let topRated):
-                print(topRated)
-            case .failure(let failure):
-                print(failure)
-            }
-        }
-    }
-    
     
     private func configureNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "play"), style: .done, target: self, action: nil)
