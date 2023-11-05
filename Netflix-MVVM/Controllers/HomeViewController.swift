@@ -40,15 +40,24 @@ class HomeViewController: UIViewController {
     }
     
     private func getTrendingMovies() {
-        APICaller.shared.getTrendingMovies { results in
-            
+        
+        APICaller.shared.getTrendingTvs { results in
             switch results {
-            case .success(let movies):
-                print(movies)
+            case .success(let tv):
+                print(tv)
             case .failure(let failure):
                 print(failure)
             }
         }
+        
+      //  APICaller.shared.getTrendingMovies { results in
+      //      switch results {
+      //      case .success(let movies):
+      //          print(movies)
+      //      case .failure(let failure):
+      //          print(failure)
+      //      }
+      //  }
     }
     
     private func configureNavBar() {
