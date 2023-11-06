@@ -26,6 +26,7 @@
 		C42522F32AF80E0B00713390 /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = C42522F22AF80E0B00713390 /* SDWebImageMapKit */; };
 		C42522F52AF81D0900713390 /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522F42AF81D0900713390 /* TitleTableViewCell.swift */; };
 		C42522F72AF81F5D00713390 /* TitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522F62AF81F5D00713390 /* TitleViewModel.swift */; };
+		C42522F92AF8C86800713390 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C42522F82AF8C86800713390 /* SearchResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		C42522ED2AF80B9300713390 /* TitleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCollectionViewCell.swift; sourceTree = "<group>"; };
 		C42522F42AF81D0900713390 /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
 		C42522F62AF81F5D00713390 /* TitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewModel.swift; sourceTree = "<group>"; };
+		C42522F82AF8C86800713390 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +95,6 @@
 				C42522CD2AF7971F00713390 /* Info.plist */,
 				C42522BF2AF7971E00713390 /* AppDelegate.swift */,
 				C42522C12AF7971E00713390 /* SceneDelegate.swift */,
-				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
 			);
 			path = "Netflix-MVVM";
 			sourceTree = "<group>";
@@ -101,10 +102,8 @@
 		C42522D32AF7995B00713390 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C42522D42AF799A000713390 /* HomeViewController.swift */,
-				C42522D62AF79A2E00713390 /* UpcomingViewController.swift */,
-				C42522D82AF79A8800713390 /* SearchViewController.swift */,
-				C42522DA2AF79ACB00713390 /* DownloadsViewController.swift */,
+				C42522FB2AF8C8A200713390 /* General */,
+				C42522FA2AF8C88100713390 /* Core */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -150,6 +149,26 @@
 				C42522E52AF7E6D700713390 /* APICaller.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		C42522FA2AF8C88100713390 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				C42522C32AF7971E00713390 /* MainTabBarViewController.swift */,
+				C42522D42AF799A000713390 /* HomeViewController.swift */,
+				C42522D62AF79A2E00713390 /* UpcomingViewController.swift */,
+				C42522D82AF79A8800713390 /* SearchViewController.swift */,
+				C42522DA2AF79ACB00713390 /* DownloadsViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		C42522FB2AF8C8A200713390 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C42522F82AF8C86800713390 /* SearchResultsViewController.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +257,7 @@
 				C42522E42AF7CF0F00713390 /* HeroHeaderUIView.swift in Sources */,
 				C42522DB2AF79ACB00713390 /* DownloadsViewController.swift in Sources */,
 				C42522C02AF7971E00713390 /* AppDelegate.swift in Sources */,
+				C42522F92AF8C86800713390 /* SearchResultsViewController.swift in Sources */,
 				C42522EA2AF8015000713390 /* Extensions.swift in Sources */,
 				C42522C22AF7971E00713390 /* SceneDelegate.swift in Sources */,
 				C42522D72AF79A2E00713390 /* UpcomingViewController.swift in Sources */,
