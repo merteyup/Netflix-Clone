@@ -83,7 +83,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         APICaller.shared.getMovie(with: titleName) { [weak self] result in
-            
             switch result {
             case .success(let videoElement):
                 DispatchQueue.main.async {
@@ -97,7 +96,6 @@ extension UpcomingViewController: UITableViewDelegate, UITableViewDataSource {
             case .failure(let error):
                 print(error.localizedDescription)
             }
-            
         }
     }
     
