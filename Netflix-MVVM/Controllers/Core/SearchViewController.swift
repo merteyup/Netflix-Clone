@@ -19,11 +19,11 @@ class SearchViewController: UIViewController {
     
     private let searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: SearchResultsViewController())
-            controller.searchBar.placeholder = "Search for a movie or tv show"
-            controller.searchBar.searchBarStyle = .minimal
+        controller.searchBar.placeholder = "Search for a movie or tv show"
+        controller.searchBar.searchBarStyle = .minimal
         return controller
     }()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -107,11 +107,11 @@ extension SearchViewController: UITableViewDataSource, UITableViewDelegate {
             
         }
     }
-        
+    
 }
 
 
-extension SearchViewController: UISearchResultsUpdating {
+extension SearchViewController: UISearchResultsUpdating, SearchResultsViewControllerDelegate {
     
     func updateSearchResults(for searchController: UISearchController) {
         let searchBar = searchController.searchBar
@@ -119,7 +119,7 @@ extension SearchViewController: UISearchResultsUpdating {
               !query.trimmingCharacters(in: .whitespaces).isEmpty,
               query.trimmingCharacters(in: .whitespaces).count >= 3,
               let resultsController = searchController.searchResultsController as? SearchResultsViewController else { return }
-        
+        resultsController.delegate = self
         
         APICaller.shared.search(with: query) { result in
             
@@ -135,4 +135,11 @@ extension SearchViewController: UISearchResultsUpdating {
         }
     }
     
+    func searchResultsViewControllerDidTapItem(_ viewModel: TitlePreviewViewModel) {
+        DispatchQueue.main.async {
+            let vc = TitlePreviewViewController()
+            vc.configure(with: viewModel)
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
