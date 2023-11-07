@@ -64,8 +64,10 @@ class DataPersistenceManager {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = appDelegate.persistentContainer.viewContext
         
+        context.delete(model)
+
         do {
-            try context.delete(model)
+            try context.save()
             completion(.success(()))
         } catch {
             completion(.failure(DatabaseError.failedToDeleteData))
