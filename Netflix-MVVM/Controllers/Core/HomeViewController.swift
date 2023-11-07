@@ -184,10 +184,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 
 
 extension HomeViewController: CollectionViewTableViewCellDelegate {
-    
-    
     func collectionViewTableViewCellDidTapCell(_ cell: CollectionViewTableViewCell, viewModel: TitlePreviewViewModel) {
-        
         DispatchQueue.main.async { [weak self] in
             let vc = TitlePreviewViewController()
             vc.configure(with: viewModel)
